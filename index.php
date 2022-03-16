@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>  
   <head>
-    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    <script src="https://libs.zappar.com/zappar-aframe/0.3.6/zappar-aframe.js"></script>
-    <title>Octacat</title>
-  </head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> 
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>   
+
   <body>
-    <a-scene>
-      <a-entity zappar-permissions-ui id="permissions"></a-entity>
-      <a-entity zappar-compatibility-ui id="compatibility"></a-entity>
-      <a-entity camera zappar-camera></a-entity>
-      <a-entity
-        zappar-image="target: Assets/Tracking.zpt"
-      >
-        <a-entity id="model" gltf-model="Assets/octo.glb"></a-entity>
-      </a-entity>
-    </a-scene>
-  </body>
-</html>
+    <a-scene embedded arjs>
+      <a-entity scale=".2 .2 .2"> 
+        <a-entity gltf-model="Assets/octo.glb" scale="3 3 3" crossOrigin="anonymous">
+        </a-entity>
+        <a-marker-camera preset='hiro'></a-marker-camera>
+        </a-scene>
+      </body>
+    </html>
