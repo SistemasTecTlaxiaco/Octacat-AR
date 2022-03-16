@@ -8,7 +8,7 @@
   <body>
     <a-scene embedded arjs>
       <a-entity scale=".1 .1 .1"> 
-        <a-entity gltf-model="\Asssets\octo.glb" scale="1 1 1" crossOrigin="anonymous">
+        <a-entity gltf-model="\Asssets\octo.glb"  scale="0.1 0.1 0.1" crossOrigin="anonymous">
         </a-entity>
         <a-marker-camera preset='hiro'></a-marker-camera>
         </a-scene>
