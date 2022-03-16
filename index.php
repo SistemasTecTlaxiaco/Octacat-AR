@@ -11,9 +11,9 @@
       <a-entity zappar-compatibility-ui id="compatibility"></a-entity>
       <a-entity camera zappar-camera></a-entity>
       <a-entity
-        zappar-image="target: https://cdn.glitch.global/98d83ac5-ff1f-472e-ae55-6cef17a20581/Tracking.zpt?v=1647413878369"
+        zappar-image="target: Assets/Tracking.zpt"
       >
-        <a-entity id="model" gltf-model="https://cdn.glitch.global/98d83ac5-ff1f-472e-ae55-6cef17a20581/octo.glb?v=1647415618923"></a-entity>
+        <a-entity id="model" gltf-model="Assets/octo.glb"></a-entity>
       </a-entity>
     </a-scene>
   </body>
