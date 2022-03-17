@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    <script src="https://libs.zappar.com/zappar-aframe/0.3.6/zappar-aframe.js"></script>
-    <title>Octacat</title>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.4/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.4/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-entity zappar-permissions-ui id="permissions"></a-entity>
-      <a-entity zappar-compatibility-ui id="compatibility"></a-entity>
-      <a-camera zappar-camera></a-camera>
-      <a-entity
-        zappar-image="target:https://cdn.glitch.global/b44ba1e4-793c-46e0-8aa8-e555b363ca1f/github-logo.zpt?v=1647464696922"
-      >
-        <a-entity
-          id="model"
-          gltf-model="https://cdn.glitch.global/b44ba1e4-793c-46e0-8aa8-e555b363ca1f/octo.glb?v=1647446060850"
-          position="0 0 0"          
-          scale="0.05 0.05 0.05"
+    <a-scene
+      mindar-image="imageTargetSrc: https://cdn.glitch.global/16b440ad-e892-4085-9aee-0cf4887d328f/targets%20(3).mind?v=1647492652448;"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model
+          rotation="0 0 0"
+          position="0 0 0"
+          scale="0.1 0.1 0.1"
+          src="https://cdn.glitch.global/16b440ad-e892-4085-9aee-0cf4887d328f/octo.glb?v=1647490761972"
         >
-        </a-entity>
+        </a-gltf-model>
       </a-entity>
     </a-scene>
   </body>
