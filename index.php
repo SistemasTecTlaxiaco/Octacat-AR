@@ -8,6 +8,7 @@
   <body>
     <a-scene
       mindar-image="imageTargetSrc: https://cdn.glitch.global/16b440ad-e892-4085-9aee-0cf4887d328f/targets%20(3).mind?v=1647492652448;"
+      color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false"
       device-orientation-permission-ui="enabled: false"
     >
@@ -17,7 +18,8 @@
           rotation="0 0 0"
           position="0 0 0"
           scale="0.1 0.1 0.1"
-          src="https://cdn.glitch.global/16b440ad-e892-4085-9aee-0cf4887d328f/octo.glb?v=1647490761972"
+          src="https://cdn.glitch.global/16b440ad-e892-4085-9aee-0cf4887d328f/octocatgit.glb?v=1648149096491"
+          animation-mixer
         >
         </a-gltf-model>
       </a-entity>
